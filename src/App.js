@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
-import MenuList from './components/MenuList';
+import MenuItems from './utils/menu.json'// we can as well call data from an API
+import Menu from './components/Menu';
+
 
 function App() {
   return (
     <div className="App">
-      <MenuList />
+     <Menu menuItems={MenuItems} />
+     
     </div>
   );
 }
